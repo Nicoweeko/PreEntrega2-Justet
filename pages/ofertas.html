@@ -5,63 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ofertas</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="icon" href="/images/logo viñeta.png">
 </head>
 <body>
     <header>
-        <div class="logo"> 
-            <img src="/images/captura 123_preview_rev_1.png" alt="logo de just-it" > 
-        </div>
-            <div>
-                <button class="buttonEducacion">
-                <a href="/index.html"><span>Inicio</span><i></i></a>
-                </button>
-                <button class="buttonEducacion">
-                <a href="/pages/portfolio.html"><span>Portfolio</span><i></i></a>
-                </button>
-                <button class="buttonEducacion">
-                <a href="/pages/educacion.html"><span>Educacion</span><i></i></a>
-                </button>
-                <button class="buttonEducacion">
-                <a href="/pages/contactos.html"><span>Contactos</span><i></i></a>
-                </button>
-            </div>
-        </header>
-</body>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../images/captura 123_preview_rev_1.png" alt="logo just-it" height="65px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">JUST-IT</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Unidades de negocio</a> 
 
-<main>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="../pages/portfolio.html">Portfolio</a></li>
+                            <li><a class="dropdown-item" href="../pages/educacion.html">Educacion</a></li>
+                            <li><a class="dropdown-item" href="../pages/ofertas.html">Ofertas</a></li>
+                            <li><a class="dropdown-item" href="../pages/contactos.html">Contactos</a></li>
+                        </ul>
 
-    <article class="serviciosBrindadosOfertas">
-    
-        <div class="servicioImagen">
-            <div class="serviciosDescripcion">
-                <img src="/images/Kaspersky Logo_preview_rev_1.png" alt="Kaspersky" style="border-radius: 10px;">
-                <p class="serviciosDescripcionParrafo">Ofrezca a sus clientes nuestras soluciones de protección de EndPoint y EDR, con el soporte plus, que incluye soporte extendido 7x24, atención telefónica y tiempo de respuesta prioritario, entre otros beneficios.
-                <br>
-                Obtenga hasta un  30% de Descuento para ventas de licencias nuevas con Soporte Plus con registro de oportunidad aprobado. 
-                <br>    
-                Válido para todas las versiones de Kaspersky Endpoint Security for Business, Kaspersky Endpoint Detection and Response Optimum y Kaspersky Endpoint Security Cloud.
-                <br>
-                30% de Descuento para órdenes hasta 249 nodos.
-                20% de Descuento para órdenes desde 250 nodos hasta 999 nodos.
-                    .</p>
+                        
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
             </div>
-                <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-                </span>
-                <span class="button-text"><a href="/pages/contactos.html">Adquirir</a></span>
-                </button>
-        </div>
+          </nav>
+    </header>
+    <main>
+
+        <article class="serviciosBrindadosOfertas">
+        
+            <div class="servicioImagen">
+                <div class="serviciosDescripcion">
+                    <img src="/images/Kaspersky Logo_preview_rev_1.png" alt="Kaspersky" style="border-radius: 10px;">
+                    <p class="serviciosDescripcionParrafo">Ofrezca a sus clientes nuestras soluciones de protección de EndPoint y EDR, con el soporte plus, que incluye soporte extendido 7x24, atención telefónica y tiempo de respuesta prioritario, entre otros beneficios.
+                    <br>
+                    Obtenga hasta un  30% de Descuento para ventas de licencias nuevas con Soporte Plus con registro de oportunidad aprobado. 
+                    <br>    
+                    Válido para todas las versiones de Kaspersky Endpoint Security for Business, Kaspersky Endpoint Detection and Response Optimum y Kaspersky Endpoint Security Cloud.
+                    <br>
+                    30% de Descuento para órdenes hasta 249 nodos.
+                    20% de Descuento para órdenes desde 250 nodos hasta 999 nodos.
+                        .</p>
+                </div>
+                    <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text"><a href="/pages/contactos.html">Adquirir</a></span>
+                    </button>
+            </div>
+        
+            <div class="servicioImagen">
+                    <img src="/images/Fortinet Logo_preview_rev_1.png" alt="Fortinet" style="border-radius: 10px;">
+                <div class="serviciosDescripcion">
+                    <p class="serviciosDescripcionParrafo">Durante el mes de Octubre renueve sus licencias con la modalidad 3 años al precios de 2 !!!
+                    <br>
+                    Oferta valida para el territorio Argentino, Para soporte de equipos Fortigate (lianea 40f hasta 200f), Fortiap (Tolos los modelos), Fortiswitch (Todos los modelos), Seguridad EDR, Forticlient, Fortimanager.
+                    </p>
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text"><a href="/pages/contactos.html">Adquirir</a></span>
+                    </button>
+                </div>
+            </div>
     
-        <div class="servicioImagen">
-                <img src="/images/Fortinet Logo_preview_rev_1.png" alt="Fortinet" style="border-radius: 10px;">
-            <div class="serviciosDescripcion">
-                <p class="serviciosDescripcionParrafo">Durante el mes de Octubre renueve sus licencias con la modalidad 3 años al precios de 2 !!!
-                <br>
-                Oferta valida para el territorio Argentino, Para soporte de equipos Fortigate (lianea 40f hasta 200f), Fortiap (Tolos los modelos), Fortiswitch (Todos los modelos), Seguridad EDR, Forticlient, Fortimanager.
-                </p>
+            <div class="servicioImagen">
+                <img src="/images/Nvidia Logo_preview_rev_1.png" alt="Nvidia" style="border-radius: 10px;">
+                <div class="serviciosDescripcion">
+                    <p class="serviciosDescripcionParrafo">Durante el mes de octubre obtene un 25% de descuento en placas de video y switeches Melanox.
+                    <br>
+                    Valido para las series 2000, 3000 y 4000 y todas las lines de switches, compra minima 25000 $.
+                    <br>
+                    Aplica unicamente para el territorio Argentino y con declaracion de oportunidad sujeta a aprobacion por parte de la marca.
+                    </p>
+                </div>
                 <button class="learn-more">
                     <span class="circle" aria-hidden="true">
                     <span class="icon arrow"></span>
@@ -69,44 +106,30 @@
                     <span class="button-text"><a href="/pages/contactos.html">Adquirir</a></span>
                 </button>
             </div>
-        </div>
-
-        <div class="servicioImagen">
-            <img src="/images/Nvidia Logo_preview_rev_1.png" alt="Nvidia" style="border-radius: 10px;">
-            <div class="serviciosDescripcion">
-                <p class="serviciosDescripcionParrafo">Durante el mes de octubre obtene un 25% de descuento en placas de video y switeches Melanox.
-                <br>
-                Valido para las series 2000, 3000 y 4000 y todas las lines de switches, compra minima 25000 $.
-                <br>
-                Aplica unicamente para el territorio Argentino y con declaracion de oportunidad sujeta a aprobacion por parte de la marca.
-                </p>
-            </div>
-            <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-                </span>
-                <span class="button-text"><a href="/pages/contactos.html">Adquirir</a></span>
-            </button>
-        </div>
-    
-        <div class="servicioImagen">
-            <img src="/images/Lenovo Logo_preview_rev_1.png" alt="Lenovo" style="border-radius: 10px;">
-            <div class="serviciosDescripcion">
-                <p class="serviciosDescripcionParrafo">Conseguí notebooks, tabletas, PCs de escritorio todo en uno y accesorios para el trabajo o el uso personal. Comprá con 12 cuotas sin interés y envío gratis a todo el país, en todos los productos. Y descuento extra pagando con depósito/transferencia.
-                <br>
-                Aplica unicamente para el territorio Argentino durante el mes de Octubre con stock limitado.
-                </p>
-            </div>
-            <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-                </span>
-                <span class="button-text"><a href="/pages/contactos.html">Adquirir</a></span>
-            </button>
-        </div>
         
-    </article>
-</main>
+            <div class="servicioImagen">
+                <img src="/images/Lenovo Logo_preview_rev_1.png" alt="Lenovo" style="border-radius: 10px;">
+                <div class="serviciosDescripcion">
+                    <p class="serviciosDescripcionParrafo">Conseguí notebooks, tabletas, PCs de escritorio todo en uno y accesorios para el trabajo o el uso personal. Comprá con 12 cuotas sin interés y envío gratis a todo el país, en todos los productos. Y descuento extra pagando con depósito/transferencia.
+                    <br>
+                    Aplica unicamente para el territorio Argentino durante el mes de Octubre con stock limitado.
+                    </p>
+                </div>
+                <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text"><a href="/pages/contactos.html">Adquirir</a></span>
+                </button>
+            </div>
+            
+        </article>
+    </main>
+
+    <script src="../Javascript/bootstrap.bundle.min.js"></script>
+</body>
+
+
 
 <footer>
     <p>Horarios de atencion: Lunes a Sábados 09:00 a 13:00 Hs - 15:30 s 19:30 Hs // Tel: 011-4451-0836 // Direccion: Belgrano 1143, Local 36 y 37, San Miguel BA. </p>
