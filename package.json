@@ -1,0 +1,31 @@
+{
+  "name": "proyecto-final-entrega-2",
+  "version": "1.0.0",
+  "description": "ejemplo de node.",
+  "main": "index.html",
+  "scripts": {
+    "test": "JUST-IT",
+    "build-css": "node-sass --include-path scss scss/origen.scss styles/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicoweeko/PreEntrega2-Justet.git"
+  },
+  "keywords": [
+    "node",
+    "sass",
+    "class",
+    "example"
+  ],
+  "author": "justet nicolas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicoweeko/PreEntrega2-Justet/issues"
+  },
+  "homepage": "https://github.com/Nicoweeko/PreEntrega2-Justet#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
